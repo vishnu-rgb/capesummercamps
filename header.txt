@@ -1,0 +1,1 @@
+document.write('<div class="thumbnail"><img src="images/kids-beach.jpeg" alt="header-photo"><div class="caption"><div class="top-p">Cape Elizabeth Community Services</div><div class="bottom-p" id="bottom-p">Summer Camps</div></div></div>')

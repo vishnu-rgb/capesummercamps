@@ -1,0 +1,210 @@
+<!--
+Cape Elizabeth Community Services Summer Camp Website
+Written By: Sam Berman
+Date Updated: June 30, 2020
+
+camps.html
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Camps - CECS Summer Camps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="images/cecs_icon.png">
+
+    <style type="text/css">
+        @media screen and (max-width: 2000px) {
+            .main-body {
+                width: 75%;
+                margin-top: 30px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .main-body {
+                width: 80%;
+                margin-top: 20px;
+            }
+        }
+
+        .camps-body {
+            line-height: 180%;
+            margin: 11px 0px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .col {
+            float: left;
+        }
+
+        .left {
+            width: 60%;
+        }
+
+        .right {
+            width: 40%;
+            min-height: 50vh;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .right img {
+            display: block;
+            width: 92%;
+            min-width: 100px;
+            max-width: 500px;
+            height: auto;
+            margin: auto;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 900px) {
+            .col {
+                width: 100%;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="safety.html">SAFETY</a></li>
+            <li><a href="camps.html" class="active-page">CAMPS</a></li>
+            <li><a class="logo" href="index.html"><img src="images/cecs_logo.png"></a></li>
+            <li><a href="schedules.html">SCHEDULES</a></li>
+            <li><a id="staffNavItem" href="staff.html"><span>MEET THE STAFF</span></a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <script language="javascript" type="text/javascript" src="header.txt"></script>
+
+    <script lanuage="javascript">
+        var theDiv = document.getElementById("bottom-p");
+        var content = document.createTextNode(" - Camps");
+        theDiv.appendChild(content);
+    </script>
+
+    <div class="main-body">
+
+        <div class="camps-body">
+
+        <h1>Camps We Offer</h1>
+
+        <button onclick="topFunction()" id="topBtn" title="Go to top">Back to Top</button>
+
+        <div class="row">
+            <div class="left col">
+                <h2>Little Cubs Camp</h2>
+                <strong>Description:</strong> A great way for your child to 
+                enjoy some summer fun with other preschoolers! Weekly themes 
+                will surround story time and arts & crafts. Week 1 Ocean 
+                Exploration, Week 2 A Bug's Life, Week 3 At the Farm, Week 4 
+                Backyard Garden, Week 5 Maine Authors, Week 6 Out in Space, 
+                Week 7 Days of the Dinosaurs. Campers will have days filled
+                with outdoor play on the Cape Care playground! <br/> <br />
+                <strong>Led By:</strong> Preschool Staff <br/>
+                <strong>Dates:</strong> June 22 - August 7 <br/>
+                <strong>Location:</strong> Community Center / Cape Care Playground <br/>
+                <strong>Ages:</strong> 3-5 yrs old (Campers must be 3 as of 
+                                        June 15 and must be fully potty/toilet 
+                                        trained) <br/>
+                <strong>Hours:</strong> 8:30 am to 3:00 pm <br/><br/>
+            </div>
+            <div class="right col imgwrap">
+                <img src="images/hopscotch.jpg" alt="Blocks at camp">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="left col">
+                <h2>Adventure Camp</h2>
+                <strong>Description:</strong> Adventure Camp offers structured 
+                activities for a day packed with fun. Campers will be with 
+                children their own age counselor led rotations of mostly
+                outdoor activities  including: tennis, archery, basketball, 
+                art,  field sports, and yard games. Campers will 
+                participate in a number of these sometimes wet, sometimes 
+                messy, but always fun activities. Weekly theme days add to the 
+                fun! <br/> <br />
+                <strong>Led By:</strong> CECS Staff <br/>
+                <strong>Dates:</strong> Middle School / Pond Cove Campus <br/>
+                <strong>Location:</strong>  June 22 - August 7 <br/>
+                <strong>Ages:</strong> 1st - 5th Graders <br/>
+                <strong>Hours:</strong> 8:30 am to 3:00 pm (see updated drop-off
+                times) <br/><br/>
+            </div>
+            <div class="right col">
+                <img src="images/playground.jpg" alt="Playground at CEHS">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="left col">
+                <h2>Teen Scene</h2>
+                <strong>Description:</strong> This camp offers tweens and 
+                teens the chance to hang out with friends while participating 
+                in some great activities suited just for them. Teen Scene 
+                incorporates daily on-campus sports activities, arts and 
+                crafts, and games! <br/> <br />
+                <strong>Led By:</strong> CECS Staff <br/>
+                <strong>Dates:</strong> Middle School Campus <br/>
+                <strong>Location:</strong>  June 22 - August 7 <br/>
+                <strong>Ages:</strong> 6th - 9th Graders <br/>
+                <strong>Hours:</strong> 8:30 am to 3:00 pm <br/><br/>
+            </div>
+            <div class="right col">
+                <img src="images/soccer.jpg" alt="Gym at CEHS">
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <script language="javascript">
+        //Get the button
+        var topButton = document.getElementById("topBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <footer>
+        <script language="javascript" type="text/javascript" src="footer.txt"></script>
+    </footer>
+
+</body>
+</html>

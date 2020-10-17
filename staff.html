@@ -1,0 +1,359 @@
+<!--
+Cape Elizabeth Community Services Summer Camp Website
+Written By: Sam Berman
+Date Updated: July 10, 2020
+
+staff.html
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meet the Staff - CECS Summer Camps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="images/cecs_icon.png">
+    
+    <style type="text/css">
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        @media screen and (max-width: 2000px) {
+            .main-body {
+                width: 80%;
+                margin-top: 30px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .main-body {
+                width: 85%;
+                margin-top: 20px;
+            }
+        }
+
+        .column {
+            float: left;
+            padding-top: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            min-height: 300px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 2000px) {
+            .column {
+                width: 25%;
+        }
+
+        @media screen and (max-width: 900px) {
+            .column {
+                width: 50%;
+        }
+
+        @media screen and (max-width: 450px) {
+            .column {
+                width: 100%;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="safety.html">SAFETY</a></li>
+            <li><a href="camps.html">CAMPS</a></li>
+            <li><a class="logo" href="index.html"><img src="images/cecs_logo.png"></a></li>
+            <li><a href="schedules.html">SCHEDULES</a></li>
+            <li><a id="staffNavItem" class="active-page" 
+                href="staff.html"><span>MEET THE STAFF</span></a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <script language="javascript" type="text/javascript" src="header.txt"></script>
+
+    <script lanuage="javascript">
+        var theDiv = document.getElementById("bottom-p");
+        var content = document.createTextNode(" - Staff");
+        theDiv.appendChild(content);
+    </script>
+
+    <div class="main-body">
+        <h1>Meet The Staff!</h1>
+
+        <button onclick="topFunction()" id="topBtn" title="Go to top">Back to Top</button>
+
+        <br/>
+
+        <div class="row">
+            <div align="center" class="column">
+                <img src="images/staff-pics/kelly.jpeg" alt="kelly" width=90% />
+                <br />
+                Kelly Phinney - Summer Camp Director
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/staff-pics/sam.jpeg" alt="sam" width=90%/>
+                <br />
+                Sam Berman - Adventure Camp Coordinator
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/staff-pics/laurie.jpeg" alt="laurie" width=90% />
+                <br />
+                Laurie Roberts - Adventure Camp Nurse / Admin
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/staff-pics/caroline-c.jpeg" alt="caroline" width=90% />
+                <br />
+                Caroline Coburn - Art Room / Admin
+            </div>
+        </div>
+
+        <div class="row">
+            <div align="center" class="column">
+                <img src="images/blank.png" alt="jack" width=90% />
+                <br />
+                Jack Stewart - Counselor Group #1 (Grade 1)
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/staff-pics/kailey.jpeg" alt="kailey" width=90%/>
+                <br />
+                Kailey Brown - Junior Counselor Group #1 (Grade 1)
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/staff-pics/meg.jpeg" alt="meg" width=90% />
+                <br />
+                Meg Brewer - Counselor Group #2 (Grade 1)
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/staff-pics/ricky.jpeg" alt="ricky" width=90% />
+                <br />
+                Ricky Perruzi - Junior Counselor Group #2 (Grade 1)
+            </div>
+        </div>
+
+        <div class="row">
+            <div align="center" class="column">
+                <img src="images/staff-pics/katie.jpeg" alt="katie" width=90%/>
+                <br />
+                Katie Bozek - Counselor Group #3 (Grades 2/3)
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/staff-pics/max-n.jpeg" alt="max n" width=90% />
+                <br />
+                Max Nelson - Junior Counselor Group #3 (Grades 2/3)
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/staff-pics/riley.jpeg" alt="riley" width=90% />
+                <br />
+                Riley Dall - Counselor Group #4 (Grades 2/3)
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/staff-pics/archie.jpeg" alt="archie" width=90% />
+                <br />
+                Archie McEvoy - Junior Counselor Group #4 (Grades 2/3)
+            </div>
+        </div>
+
+        <div class="row">
+            <div align="center" class="column">
+                <img src="images/staff-pics/max-p.jpeg" alt="max p" width=90%/>
+                <br />
+                Max Patterson - Counselor Group #5 (Grades 2/3)
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/staff-pics/anna.jpeg" alt="anna" width=90% />
+                <br />
+                Anna Cornell - Junior Counselor Group #5 (Grades 2/3)
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/blank.png" alt="alec" width=90% />
+                <br />
+                Alec Riggle - Counselor Group #6 (Grades 2/3)
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/staff-pics/caroline-p.jpeg" alt="caroline" width=90% />
+                <br />
+                Caroline Pellegrini - Junior Counselor Group #6 (Grades 2/3)
+            </div>
+        </div>
+
+        <div class="row">
+            <div align="center" class="column">
+                <img src="images/staff-pics/nate.jpeg" alt="nate" width=90% />
+                <br />
+                Nate Patterson - Floater JC Grades 2/3
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/staff-pics/darcy.jpeg" alt="darcy" width=90%/>
+                <br />
+                Darcy Cochran - JC / 1-on-1 Grades 2/3
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/staff-pics/alex.jpeg" alt="alex" width=90% />
+                <br />
+                Alex Bozek - Counselor Group #7 (Grades 4/5)
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/staff-pics/emma.jpeg" alt="emma" width=90% />
+                <br />
+                Emma Clarke - Junior Counselor Group #7 (Grades 4/5)
+            </div>
+        </div>
+
+        <div class="row">
+            <div align="center" class="column">
+                <img src="images/staff-pics/luke.jpeg" alt="luke" width=90% />
+                <br />
+                Luke Stephen - Counselor Group #8 (Grades 4/5)
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/staff-pics/john.jpeg" alt="john" width=90%/>
+                <br />
+                John Clarke - Junior Counselor Group #8 (Grades 4/5)
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/staff-pics/mat.jpeg" alt="mat" width=90% />
+                <br />
+                Mat Clarke - Floater JC Grades 4/5
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/staff-pics/cassie.jpeg" alt="cassie" width=90% />
+                <br />
+                Cassie Wandell - Counselor Teen Scene
+            </div>
+        </div>
+
+        <div class="row">
+            <div align="center" class="column">
+                <img src="images/staff-pics/tim.jpeg" alt="tim" width=90% />
+                <br />
+                Tim Gilda - Counselor Teen Scene
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/staff-pics/joey.jpeg" alt="joey" width=90%/>
+                <br />
+                Joey Labrie - Junior Counselor Teen Scene
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/blank.png" alt="jenny" width=90%/>
+                <br />
+                Jenny Allen - Little Cubs Teacher
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/blank.png" alt="ellen" width=90%/>
+                <br />
+                Ellen Berg - Little Cubs Teacher
+            </div>
+        </div>
+
+        <div class="row">
+            <div align="center" class="column">
+                <img src="images/blank.png" alt="jen" width=90% />
+                <br />
+                Jen Murphy - Little Cubs Teacher
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/blank.png" alt="martha" width=90%/>
+                <br />
+                Martha Pulsifer - Little Cubs Teacher
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/staff-pics/eva.jpeg" alt="eva" width=90%/>
+                <br />
+                Eva Jonsdottir - Little Cubs JC
+            </div>
+
+            <div align="center" class="column">
+                <img src="images/staff-pics/saleema.jpeg" alt="saleema" width=90%/>
+                <br />
+                Saleema Shir - Little Cubs JC
+            </div>
+        </div>
+
+        <div class="row">
+            <div align="center" class="column">
+                <img src="images/staff-pics/maddy.jpeg" alt="maddy" width=90% />
+                <br />
+                Maddy McCarthy - Little Cubs JC
+            </div>
+
+            <div align="center" class="column">
+                
+            </div>
+
+            <div align="center" class="column">
+
+            </div>
+
+            <div align="center" class="column">
+                
+            </div>
+        </div>
+
+    </div>
+
+    <script language="javascript">
+        //Get the button
+        var topButton = document.getElementById("topBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <footer>
+        <script language="javascript" type="text/javascript" src="footer.txt"></script>
+    </footer>
+
+</body>
+</html>

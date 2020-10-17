@@ -1,0 +1,530 @@
+<!--
+Cape Elizabeth Community Services Summer Camp Website
+Written By: Sam Berman
+Date Updated: June 30, 2020
+
+index.html
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - CECS Summer Camps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="images/cecs_icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+
+        @media screen and (max-width: 2000px) {
+            .main-body {
+                width: 70%;
+                margin-top: 30px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .main-body {
+                width: 80%;
+                margin-top: 20px;
+            }
+        }
+
+        @media screen and (max-width: 2000px) {
+            .column {
+                width: 33.3%;
+            }
+        }
+
+        @media screen and (max-width: 750px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        .column {
+            float: left;
+            padding-top: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .col {
+            float: left;
+        }
+
+        .left {
+            width: 50%;
+        }
+
+        .right {
+            width: 50%;
+            min-height: 50vh;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .right img {
+
+            width: 95%;
+            min-width: 100px;
+            max-width: 500px;
+            height: auto;
+            margin: auto;
+            display: table-cell;
+            vertical-align: middle;
+            padding-top: 30px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 900px) {
+            .col {
+                width: 100%;
+            }
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        td, th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+        }
+
+        /*.dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 15px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }*/
+
+    </style>
+
+    <script language="javascript">
+        
+        function myFunction() {
+            let x = document.querySelector(".topNav");
+            if (x.style.display == "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+        
+    </script>
+</head>
+
+<body>
+    <nav>
+        <!-- <script language="javascript" type="text/javascript" src="nav.txt"></script> -->
+        <ul>
+            <li><a href="index.html" id="dropbtn" class="active-page">HOME</a></li>
+            <!-- <li><div class="dropdown">
+                <button class="dropbtn"><a href="safety.html">SAFETY</a><i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div></li> -->
+            <li><a href="safety.html">SAFETY</a></li>
+            <li><a href="camps.html">CAMPS</a></li>
+            <li><a class="logo" href="index.html"><img src="images/cecs_logo.png"></a></li>
+            <li><a href="schedules.html">SCHEDULES</a></li>
+            <li><a id="staffNavItem" href="staff.html"><span>MEET THE STAFF</span></a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <script language="javascript" type="text/javascript" src="header.txt"></script>
+
+    <div class="main-body">
+        <h1>Welcome to Summer Camp!</h1>
+        Get ready to learn, play, create, and go places. We are very excited to introduce
+        you to our weekly summer day camp programs. Our primary goal is to provide a safe
+        and fun environment for all our participants. Together we unplug, play, swim, 
+        keep active, make friends, and expand our abilities; we become more confident, resilient,
+        and independent! 
+
+        <button onclick="topFunction()" id="topBtn" title="Go to top">Back to Top</button>
+
+        <p style="color: red;"><strong>Note:</strong> This page contains
+        information on the day-to-day operations of camp. For new safety precautions and
+        COVID-19 information, please see our <a href="safety.html">safety page</a>.<p>
+
+        <p>If you would like to see the information in the parent
+        packet in PDF form, please <a href="files/parent-packet-2020.pdf" 
+        target="_blank">click here</a>.</p>
+
+        <strong>ENROLLMENT:</strong> <a href="https://apm.activecommunities.com/cecommunityservices/Home"
+        target="_blank">Click here</a> to enroll in Cape Elizabeth Summer Rec Camp!
+
+        <br/><br/>
+
+        <div class="row">
+            <div align="center" class="column">
+                <h2>Safety</h2>
+                <img src="images/shield.png" width=40% alt="Safety Icon">
+            </div>
+
+            <div align="center" class="column">
+                <h2>Fun</h2>
+                <img src="images/party.png" width=40% alt="Fun Icon">
+            </div>
+
+            <div align="center" class="column">
+                <h2>Respect</h2>
+                <img src="images/respect.png" width=40% alt="Respect Icon">
+            </div>
+        </div>
+        <br/>
+
+
+        <h2>Facilities</h2>
+        During camp hours, our staff will be responsible for keeping the following areas
+        safe and secure. Campers are limited to designated areas and are not permitted in
+        any space without their counselor. Campers who breach these boundaries will be
+        disciplined according to our Rules and Disciplinary Policy. Areas included for our
+        use are the playgrounds, MS Multipurpose Field, Holman Baseball Field, Capano Field,
+        Moulton Baseball Field, HS Tennis Courts, Nature Land, inside and outside the Middle
+        School / Pond Cove, the Community Center, and the pool. <br/> <br/>
+
+        <a href="files/fields-map.jpeg" target="_blank">Click Here</a> for a map of the fields 
+        available for Summer Camp use.
+
+        <!-- <a href="drop_off-map.jpeg" target="_blank">Click Here</a> for a map of drop-off locations
+        for all three camps. -->
+
+        <!-- <img src="fields-map.jpeg" width=45% alt="Portland Head Light"> -->
+
+        <!-- <iframe src="fields-map.pdf" width="50%" height="500px"></iframe> -->
+
+        <br/> <br/>
+
+
+        <h2>Camp Administrators</h2>
+        <div style="line-height: 250%;">
+            <strong>Summer Camp Director:</strong> Kelly Phinney <br/>
+            <strong>Youth Program Coordinators:</strong> Susan Frost and John Cesere <br/>
+            <strong>Adventure Camp Coordinator:</strong> Sam Berman <br/>
+            <strong>Little Cubs Coordinators:</strong> Jennifer Murphy, Ellen Berg, Jenny Allen, 
+            and Martha Pulsifer <br/>
+            <strong>Teen Scene Coordinator:</strong> CECS Summer Staff <br/> <br/>
+        </div>
+
+        <div class="row">
+            <div class="left col">
+                <h2>Drop Off</h2>
+
+                <ul>
+                    <li>There is no supervision provided before or following camp hours unless 
+                    pre-registered for Before or After Care.</li>
+
+                    <li>There will be no bussing to and from camp.</li>
+
+                    <li>We will be staggering arrival / drop off times and plan to limit direct 
+                    contact with parents as much as possible.</li>
+                </ul>
+
+                <p><strong>Little Cubs (Ages 3-5):</strong> 8:30 (campers whose last name
+                begins with A thru J) and 8:45 (campers whose last name begins with K
+                thru Z) at the Cape Care playground by the High School.</p>
+
+                <p><strong>Adventure Camp:</strong>
+                <ul>
+                    <li>8:30am Drop Off for 4th and 5th Graders</li>
+                    <li>8:45am Drop Off for 2nd and 3rd Graders</li>
+                    <li>9:00am Drop off for 1st Graders</li>
+                </ul>
+
+                Drop Off for Adventure Camp will be outside the Tech Wing of the Middle School
+                near the Moulton Baseball Field (see map).
+
+                <p><strong>Teen Scene:</strong> 8:30am (campers whose last name begins with A 
+                thru N) and 8:45 (campers whose last name begins with O thru Z) at the Middle
+                School Staff parking lot off of Scott Dyer Road near the 30s building 
+                (see map).</p>
+
+                <p><strong>Before Care:</strong> 7:15am - 8:30am at Community Center for
+                those that pre-register. Preschool through 6th grade at Community Center.</p>
+
+            </div>
+
+            <div class="right col imgwrap">
+                <img src="files/drop_off-map.jpeg" alt="Drop Off Map">
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="row">
+            <div class="left col">
+                <h2>Pick Up</h2>
+                
+                <ul>
+                    <li>There is no supervision provided before or following camp hours unless 
+                    pre-registered for Before or After Care.</li>
+
+                    <li>There will be no bussing to and from camp.</li>
+
+                    <li>We will staggering arrival / drop off times and plan to limit direct 
+                    contact with parents as much as possible.</li>
+                </ul>
+
+                <p><strong>Little Cubs:</strong> 3:00pm Pick Up at the CECS Main Office.</p>
+
+                <p><strong>Adventure Camp:</strong>
+                <ul>
+                    <li>3:00pm Pick Up for 4th and 5th Graders in the Pond Cove Parent Pick
+                    Up Circle</li>
+                    <li>3:00pm Pick Up for 2nd and 3rd Graders same spot as drop off (middle
+                    school parking lot outside the tech wing) </li>
+                    <li>3:00pm Pick Up for 1st Graders in the PC/MS Bus Circle (enter from
+                    the High School)</li>
+                </ul>
+
+                Pick Up for Adventure Camp will be all be at 3:00pm but in staggered locations
+                (see map).
+
+                <p><strong>Teen Scene:</strong> 3:00pm Pick Up in the Middle School Staff
+                Parking lot off of Scott Dyer Road near the 30s Building (same spot
+                at drop off).</p>
+
+                <p><strong>Before Care:</strong> 3:00pm - 5:30pm at Community Center for
+                those that pre-register. Preschool through 6th grade at Community Center.</p>
+
+                <p><strong>We encourage all parents to remain in their vehicles at pick up, 
+                we will bring your child to you when you arrive.</strong></p>
+
+            </div>
+
+            <div class="right col imgwrap">
+                <img src="files/pick_up-map.jpeg" alt="Pick Up Map">
+            </div>
+        </div>
+
+        <br/>
+
+        <h2>Rules and Disciplinary Policy</h2>
+        <a href="files/rules-disciplinary-policy.pdf" target="_blank">Click here</a> to view the policy. 
+        Please read the document carefully and make sure it is understood by both you and your camper.
+
+        <br/> <br/>
+
+        <h2>Communication</h2>
+        Any additional information or changes in our daily schedule will be emailed to you and
+        posted on our website at www.capecommunityservices.org. If you need to speak to your
+        camper or have a change in your camper's daily schedule please call the appropriate 
+        phone number from the <a href="contact.html">Contact Us</a> page. Any and all other camp 
+        related questions, payments, cancellations, etc. may be directed to Community Services 
+        at 799-2868. Summer Hours are June 22 - August 30, 7:30 am - 3:30 pm.
+
+        <br/> <br/>
+
+        <h2>Medications</h2>
+        A Medication Distribution form must be completed for any prescription and nonprescription
+        medication(s) we need to administer to your child during camp hours. Medications should be
+        clearly labeled in its original container, inside a ziplock bag, with the child's name on it,
+        and left at the camp desk with a camp administrator. <a href="files/medication-authorization.pdf" 
+        target="_blank">Click here</a> for the form to authorize camp staff to dispense 
+        medication.
+
+        <br/> <br/>
+
+        <h2>Emergency Procedures</h2>
+        Staff and counselors are CPR certified, equipped with walkie talkie and first aid kit to
+        treat any minor accident. Parents will be contacted immediately if a doctor's attention is
+        required. If immediate medical care is necessary, an ambulance will be called first and 
+        then the parents. If the parents are unable to accompany the child to the nearest emergency
+        room, they will be accompanied by a staff person.
+
+        <br/> <br/>
+
+        <h2>Theme Days</h2>
+        Staff, counselors, and campers all participate in theme days! They are what make camp
+        special -- they encourage a camp spirit, generate excitement, and offer campers something 
+        to look forward to. Variations in the schedule appear on the chart below. <br/> <br/>
+
+        <table>
+            <tr>
+                <th>Week</th>
+                <th>Dates</th>
+                <th>Little Cubs Theme</th>
+                <th>Theme Day Wednesdays</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>6/22 - 6/26</td>
+                <td>Ocean Exploration</td>
+                <td>Retro Camp T-Shirts</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>6/29 - 7/2</td>
+                <td>A Bug's Life</td>
+                <td>Red/White/Blue Day</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>7/6 - 7/10</td>
+                <td>At The Farm</td>
+                <td>Super Hero Day</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>7/13 - 7/17</td>
+                <td>Backyard Garden</td>
+                <td>Sports Day</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>7/20 - 7/24</td>
+                <td>Maine Authors</td>
+                <td>Hawaiian Day</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7/27 - 7/30</td>
+                <td>Out in Space</td>
+                <td>Color Day (TBA)</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8/3 - 8/7</td>
+                <td>Days of Dinosaurs</td>
+                <td>Penny Carnival</td>
+            </tr>
+        </table>
+
+        <br/>
+
+        <h2>Snack Bar</h2>
+        Unfortunately, there will be no snack bar this summer due to CDC guidelines.
+
+        <br/> <br/>
+
+        <h2>Late Fees</h2>
+        Pick-up from camp is promptly at 3:00 pm. Please call us if you know you are running more
+        than 10 minutes late. After 3:15 pm a late fee will be charged, unless your child is 
+        registered for after care.
+
+        <ul>
+            <li>15 minutes $25 late fee.</li>
+            <li>16 - 30 minutes $30 late fee.</li>
+            <li>Over 31 minutes $40 late fee.</li>
+        </ul>
+
+        <h2>Documents</h2>
+        <a href="files/parent-packet-2020.pdf" target="_blank">Summer Camp 2020 Parent 
+        Packet</a><br/> <br/>
+        <a href="files/parent-covid-info.pdf" target="_blank">Summer Camp 2020 Parent COVID-19 
+        Packet</a><br/> <br/>
+        <a href="files/cecs-summer-camp-waiver.pdf" target="_blank">CECS Waiver for Summer Camp 
+        2020</a><br/> <br/>
+        <a href="files/rules-disciplinary-policy.pdf" target="_blank">Rules and Disciplinary 
+        Policy</a><br/> <br/>
+        <a href="files/medication-authorization.pdf" target="_blank">Authorization to Dispense
+        Medication Form</a><br/> <br/>
+        <a href="files/fields-map.pdf" target="_blank">Campus Fields Map</a><br/> <br/>
+        <a href="files/drop_off-map.pdf" target="_blank">Drop Off Map</a><br/> <br/>
+        <a href="files/pick_up-map.pdf" target="_blank">Pick Up Map</a><br/> <br/>
+
+
+        <div style="text-align: right; font-size: 8px; line-height: 200%;">
+            Shield icon made by Kiranshastry from www.flaticon.com <br/>
+            New Year icon made by Freepik from www.flaticon.com <br/>
+            Respect icon made by Freepik from www.flaticon.com <br/>
+        </div>
+
+    </div>
+
+    <script language="javascript">
+        //Get the button
+        var topButton = document.getElementById("topBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <footer>
+        <script language="javascript" type="text/javascript" src="footer.txt"></script>
+    </footer>
+
+</body>
+</html>

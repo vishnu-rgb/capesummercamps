@@ -1,0 +1,1 @@
+document.write('Main Office: (207) 799-2868<br/>Camp Desk: (207) 899-6423<br/>Copyright &copy; 2020 Cape Elizabeth Community Services')

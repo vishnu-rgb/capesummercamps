@@ -1,0 +1,1 @@
+document.write('<ul><li><a href="index.html">HOME</a></li><li><a href="safety.html">SAFETY</a></li><li><a href="camps.html">CAMPS</a></li><li><a class="logo" href="index.html"><img src="images/cecs_logo.png"></a></li><li><a href="schedules.html">SCHEDULES</a></li><li><a href="staff.html">MEET THE STAFF</a></li><li><a href="contact.html">CONTACT</a></li></ul>')
